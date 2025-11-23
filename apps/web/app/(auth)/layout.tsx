@@ -1,10 +1,11 @@
+import { AuthLayout } from "@/modules/auth/ui/layouts/auth-layout"
 import { ReactNode } from "react"
 
 const Layout = ({ children }: { children: ReactNode }) => {
     return (
-        <div className="min-h-screen min-w-screen flex flex-col items-center justify-center">
+        <AuthLayout>
             {children}
-        </div>
+        </AuthLayout>
     )
 }
 
